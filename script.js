@@ -1,3 +1,4 @@
+// Navigation for mobile
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
@@ -21,3 +22,10 @@ const navSlide = () => {
 };
 
 navSlide();
+
+//Update value of --vh when the window resizes
+window.addEventListener('resize', () => {
+    // Get inner height of the viewport
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+})
