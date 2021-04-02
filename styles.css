@@ -21,6 +21,7 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 30%;
+  z-index: -1;
 }
 
 .nav-links li {
@@ -62,15 +63,22 @@ nav {
         overflow-x: hidden;
     }
 
+    .logo img {
+        width: 200px;
+    }
+
     nav {
-        min-height: calc(var(--vh, 1vh) * 10);
+        /* height: 10vh; */
+        height: calc(var(--vh, 1vh) * 10);
       }
 
   .nav-links {
     position: absolute;
     right: 0px;
-    height: calc(var(--vh, 1vh) * 90);
-    top: calc(var(--vh, 1vh) * 10);
+    height: 90vh;
+    top: 10vh;
+    /* height: calc(var(--vh, 1vh) * 90);
+    top: calc(var(--vh, 1vh) * 10); */
     background-color: #e6e6e6;
     display: flex;
     flex-direction: column;
@@ -78,10 +86,12 @@ nav {
     width: 50%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    justify-content: center;
   }
 
   .nav-links li {
       opacity: 0;
+      margin: 60px 0;
   }
 
   .burger {
