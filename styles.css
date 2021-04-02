@@ -20,6 +20,8 @@ nav {
   min-height: 10vh;
   background-color: #e6e6e6;
   font-family: "Work Sans", sans-serif, Arial;
+  width: 100%;
+  position: fixed;
 }
 
 .logo img {
