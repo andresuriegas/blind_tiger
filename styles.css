@@ -68,17 +68,16 @@ nav {
     }
 
     nav {
-        /* height: 10vh; */
-        height: calc(var(--vh, 1vh) * 10);
+    height: 150px;
       }
 
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 90vh;
-    top: 10vh;
-    /* height: calc(var(--vh, 1vh) * 90);
-    top: calc(var(--vh, 1vh) * 10); */
+    /* height: 90vh;
+    top: 10vh; */
+    height: calc(var(--vh, 1vh) * 90);
+    top: calc(var(--vh, 1vh) * 10);
     background-color: #e6e6e6;
     display: flex;
     flex-direction: column;
