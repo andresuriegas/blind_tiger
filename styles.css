@@ -18,10 +18,11 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: #e6e6e6;
-  font-family: "Work Sans", sans-serif, Arial;
+  background-color: rgba(18, 18 , 18, 0.9);
+  font-family: "Montserrat", sans-serif, Arial;
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
 
 .logo img {
@@ -32,6 +33,7 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 30%;
+  z-index: 100;
 }
 
 .nav-links li {
@@ -39,7 +41,7 @@ nav {
 }
 
 .nav-links a {
-  color: rgb(46, 46, 46);
+  color: #fff;
   text-decoration: none;
   letter-spacing: 0.5px;
   font-weight: 500;
@@ -49,7 +51,7 @@ nav {
 }
 
 .btn-1 {
-    background-color: #ff4500;
+    background-color: #303f9f;
     border-radius: 50px;
 
 }
@@ -61,7 +63,7 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: rgb(19, 19, 19);
+  background-color: #fff;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -86,9 +88,8 @@ nav {
     right: 0px;
     /* height: 90vh;
     top: 10vh; */
-    min-height: calc(var(--vh, 1vh) * 90);
+    height: calc(var(--vh, 1vh) * 90);
     top: 150px;
-    background-color: #e6e6e6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +97,8 @@ nav {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     justify-content: start;
-  }
+    background-color: rgba(18, 18 , 18, 0.9);
+    }
 
   .nav-links li {
       opacity: 0;
@@ -112,17 +114,107 @@ nav {
       cursor: pointer;
   }
 
+  .scroll-down img {
+    width: 50px;
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  .welcome-message {
+    font-family: "Montserrat";
+    width: 100%;
+  }
+  .welcome-message h1 {
+    font-size: 2em;
+    text-align: start;
+    margin: 50px 0 15px 30px;
+  }
+
+  .welcome-message h2 {
+    font-size: 1.3em;
+    text-align: start;
+    margin: 15px 30px 0 30px;
+    font-weight: 300;
+  }
+
+  .image-container {
+    align-content: center;
+  }
+  
+  .beer-img {
+    width: 100%;
+  }
+  
+  .inline-link {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+  }
+  
+  .inline-link:hover {
+  color:#303f9f;
+  }
+
 }
 
 /* Desktops and laptops */
 @media screen and (min-width: 1224px) {
-  nav {
-    background-color: #e6e6e6;
-  }
-
   .nav-links {
     width: 40%;
   }
+
+  .about {
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .welcome-message {
+    font-family: "Montserrat";
+    width: 100%;
+  }
+  
+  .welcome-message h1 {
+    font-size: 4em;
+    text-align: start;
+    margin: 200px 0 -50px 200px;
+  }
+  
+  .welcome-message h2 {
+    font-size: 4em;
+    text-align: start;
+    margin: 90px 200px 0 200px;
+    font-weight: 300;
+  }
+  
+  .image-container {
+    align-content: center;
+  }
+  
+  .beer-img {
+    width: 33%;
+  }
+  
+  .inline-link {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+  }
+  
+  .inline-link:hover {
+  color:#303f9f;
+  }
+
 }
 
 .nav-active {
@@ -152,6 +244,20 @@ nav {
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
-section {
-    height: 100vh;
+.main {
+  background-image: url('./Assets/pexels-maximiliano-carrizo-1921420.jpg');
+  height: calc(var(--vh, 1vh) * 100);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+ .scroll-down img {
+  position: absolute;
+  top: 80vh;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 200px;
+}
+
