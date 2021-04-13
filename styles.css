@@ -109,11 +109,15 @@ nav {
 
   .nav-links li {
     opacity: 0;
-    margin: 50px 0;
+    margin: 30px 0;
   }
 
   .nav-links li:first-child {
-    margin: 40px 0 50px 0;
+    margin: 20px 0 30px 0;
+  }
+
+  .nav-links li:last-child {
+    margin: 150px 0 30px 0;
   }
 
   .burger {
