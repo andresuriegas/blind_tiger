@@ -29,7 +29,8 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  min-height: 150px;
+  height: 10vh;
   background-color: rgba(18, 18, 18, 0.9);
   font-family: "Montserrat", sans-serif, Arial;
   width: 100%;
@@ -173,7 +174,7 @@ nav {
 
 .about-header {
   width: 80%;
-  margin: 10% 10% 0 10%;
+  margin: 160px 10% 0 10%;
   height: auto;
 }
 
@@ -265,10 +266,6 @@ td, th {
   .history-block {
     width: 80%;
     margin:0 10%;
-  }
-
-  .about-header {
-    margin: 50% 10% 0 10%;
   }
 }
 
