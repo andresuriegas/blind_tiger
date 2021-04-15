@@ -460,6 +460,7 @@ html {
     background-color: rgba(83, 83, 83, 0.4);
     color: #fff;
     outline: none;
+    width: 80%;
   }
 
   #signUpBtn {
