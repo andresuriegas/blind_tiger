@@ -69,9 +69,10 @@ window.onscroll = () => {
 // When the user scrolls down 20px from the top of the document, show the button
 const scrollFunction = () => {
   if (
-    document.body.scrollTop > window.innerHeight / 2 ||
-    document.documentElement.scrollTop > window.innerHeight / 2
+    document.body.scrollTop > window.innerHeight / 1.8 ||
+    document.documentElement.scrollTop > window.innerHeight / 1.8
   ) {
+    topButton.style.visibility = "visible"
     topButton.style.display = "block";
   } else {
     topButton.style.display = "none";

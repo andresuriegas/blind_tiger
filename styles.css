@@ -29,7 +29,7 @@ html {
 
 #topBtn {
   position: fixed;
-  z-index: 99;
+  z-index: 97;
   cursor: pointer;
   bottom: calc(var(--vh, 1vh) * 40);
   right: 4%;
@@ -42,6 +42,7 @@ html {
   color: #fff;
   border: 3px solid #fff;
   text-align: center;
+  visibility: hidden;
 }
 
 #topBtn:hover {
@@ -68,8 +69,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 150px;
-    height: 10vh;
+    min-height: 100px;
     background-color: rgba(18, 18, 18, 0.9);
     font-family: "Montserrat", sans-serif, Arial;
     width: 100%;
@@ -78,14 +78,14 @@ html {
   }
 
   .logo img {
-    width: 200px;
+    width: 150px;
   }
 
   .nav-links {
     position: absolute;
     right: 0px;
     height: calc(var(--vh, 1vh) * 90);
-    top: 150px;
+    top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,7 +204,7 @@ html {
 
   .about-header {
     width: 80%;
-    margin: 160px 10% 0 10%;
+    margin: 115px 10% 0 10%;
     height: auto;
   }
 
@@ -403,17 +403,16 @@ html {
   }
 
   .logo-header {
-    height: 100px;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    margin: 5% 10% 0 10%;
+    margin: 2% 10% 0 10%;
   }
 
   .footer-main {
     width: 80%;
-    margin: 0 15% 5% 15%;
+    margin: 0 15%;
     display: flex;
     justify-content: space-around;
     color: #fff;
@@ -475,7 +474,7 @@ html {
 
   .footer-main div {
     width: 100%;
-    margin: 5% 0;
+    margin: 3% 0;
   }
 
   .footer-main div hr {
@@ -506,8 +505,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 150px;
-    height: 10vh;
+    min-height: 100px;
     background-color: rgba(18, 18, 18, 0.9);
     font-family: "Montserrat", sans-serif, Arial;
     width: 100%;
@@ -516,14 +514,14 @@ html {
   }
 
   .logo img {
-    width: 200px;
+    width: 150px;
   }
 
   .nav-links {
     position: absolute;
     right: 0px;
     height: calc(var(--vh, 1vh) * 90);
-    top: 150px;
+    top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -642,7 +640,7 @@ html {
 
   .about-header {
     width: 80%;
-    margin: 160px 10% 0 10%;
+    margin: 115px 10% 0 10%;
     height: auto;
   }
 
@@ -949,8 +947,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 150px;
-    height: 10vh;
+    min-height: 100px;
     background-color: rgba(18, 18, 18, 0.9);
     font-family: "Montserrat", sans-serif, Arial;
     width: 100%;
@@ -959,14 +956,14 @@ html {
   }
 
   .logo img {
-    width: 200px;
+    width: 150px;
   }
 
   .nav-links {
     position: absolute;
     right: 0px;
     height: calc(var(--vh, 1vh) * 90);
-    top: 150px;
+    top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1068,7 +1065,7 @@ html {
   .main {
     background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
     height: calc(var(--vh, 1vh) * 100);
-    background-size: cover;
+    background-size: auto calc(var(--vh, 1vh) * 100);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1085,7 +1082,7 @@ html {
 
   .about-header {
     width: 80%;
-    margin: 160px 10% 0 10%;
+    margin: 115px 10% 0 10%;
     height: auto;
   }
 
@@ -1527,7 +1524,7 @@ html {
   .main {
     background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
     height: calc(var(--vh, 1vh) * 100);
-    background-size: cover;
+    background-size: auto calc(var(--vh, 1vh) * 100);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1977,7 +1974,7 @@ html {
   .main {
     background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
     height: calc(var(--vh, 1vh) * 100);
-    background-size: cover;
+    background-size: auto calc(var(--vh, 1vh) * 100);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -2193,7 +2190,6 @@ html {
   }
 
   .logo-header {
-    height: 100px;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -2221,11 +2217,11 @@ html {
   }
 
   .footer-main ul li:first-child {
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
   .footer-main ul li {
-    padding: 0.8rem 0;
+    padding: 0.6rem 0;
     text-align: center;
   }
 
@@ -2237,20 +2233,21 @@ html {
 
   .social-media-menu ul li {
     display: inline-block;
-    padding: 2rem 0.7rem;
+    padding: 1rem 0.7rem;
   }
 
   .newsletter-wrapper input {
     border-radius: 2rem;
     font-size: 1rem;
-    padding: 8px 10px;
+    padding: 0.6rem 0.7rem;
     display: block;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border: none;
     background-color: rgba(83, 83, 83, 0.4);
     color: #fff;
     outline: none;
+    width: 80%;
   }
 
   #signUpBtn {
@@ -2265,7 +2262,7 @@ html {
 
   .footer-main div {
     width: 100%;
-    margin: 8% 0;
+    margin: 6% 0;
   }
 
   .footer-main div hr {
