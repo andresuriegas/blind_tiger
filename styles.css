@@ -1386,7 +1386,6 @@ html {
   */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
   /* --------------- Styles for navigation bar --------------- */
   .nav-links li {
     margin: 2rem 0;
@@ -1816,8 +1815,12 @@ html {
 
   .footer-main div {
     width: 100%;
-    margin-bottom: 2%;
-    margin: 8% 0;
+    margin: 6% 0;
+  }
+
+  .footer-main div:last-child {
+    margin-top: 6%;
+    margin-bottom: 0;
   }
 
   .footer-main div hr {
@@ -1833,6 +1836,13 @@ html {
     width: 90%;
     margin: 2% 10% 5% 10%;
     font-size: 0.7rem;
+    flex-flow: row wrap;
+  }
+
+  .copyright p {
+    width: 100%;
+    text-align: center;
+    margin: 2%;
   }
 }
 
@@ -2255,7 +2265,6 @@ html {
 
   .footer-main div {
     width: 100%;
-    margin-bottom: 2%;
     margin: 8% 0;
   }
 
@@ -2272,5 +2281,12 @@ html {
     width: 90%;
     margin: 2% 10% 5% 10%;
     font-size: 0.7rem;
+    flex-flow: row wrap;
+  }
+
+  .copyright p {
+    width: 100%;
+    text-align: center;
+    margin: 2%;
   }
 }
