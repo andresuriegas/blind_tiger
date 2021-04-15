@@ -58,3 +58,27 @@ window.addEventListener("resize", () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
+
+// Scroll back to top button
+let topButton = document.getElementById("topBtn");
+
+window.onscroll = () => {
+  scrollFunction();
+};
+
+// When the user scrolls down 20px from the top of the document, show the button
+const scrollFunction = () => {
+  if (
+    document.body.scrollTop > window.innerHeight / 2 ||
+    document.documentElement.scrollTop > window.innerHeight / 2
+  ) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+};
+
+const topFunction = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollY = 0;
+};

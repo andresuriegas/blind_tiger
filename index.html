@@ -14,9 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/png">
     <title>The Blind Tiger Brewing Co.</title>
   </head>
   <body>
+    <button onclick="topFunction()" id="topBtn" title="Back to top">^</button>
     <nav id="navigation">
       <a href="index.html" class="logo">
         <img src="./Assets/logo-white.png" alt="logo" />
@@ -50,7 +52,7 @@
         <div class="line3"></div>
       </div>
     </nav>
-    <section class="landing-page">
+    <section>
       <div class="main"></div>
       <a href="" id="about"></a>
     </section>
@@ -238,6 +240,68 @@
         </div>
       </div>
     </section>
+    <footer class="flex-footer">
+      <div class="logo-header">
+        <a href="index.html" class="logo">
+          <img src="./Assets/logo-white.png" alt="logo" />
+        </a>
+      </div>
+      <div class="footer-main">
+        <div class="site-menu">
+          <h5>Menu</h5>
+          <hr />
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#our-beers">Our Beers</a>
+            </li>
+          </ul>
+        </div>
+        <div class="newsletter-wrapper">
+          <h5>Sign up to our newsletter</h5>
+          <hr />
+          <input type="email" placeholder="email" name="email"></input>
+          <a href="" id="signUpBtn">Sign up</a>
+        </div>
+        <div class="social-media-menu">
+          <h5>Say hi!</h5>
+          <hr />
+          <ul>
+            <li>
+              <a href="https://twitter.com/" target="_blank"
+                ><img src="./Assets/005-twitter.png" alt="Twitter logo"
+              /></a>
+            </li>
+            <li>
+              <a href="https://instagram.com/" target="_blank"
+                ><img src="./Assets/002-instagram.png" alt="Instagram logo"
+              /></a>
+            </li>
+            <li>
+              <a href="https://facebook.com/" target="_blank"
+                ><img
+                  src="./Assets/004-facebook-app-logo.png"
+                  alt="Facebook logo"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.messenger.com/" target="_blank"
+                ><img src="./Assets/007-messenger.png" alt="Messenger logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&#169; 2021 The Blind Tiger Brewing Co.</p>
+        <p>Crafted with ❤️ from Brooklyn.</p>
+      </div>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>

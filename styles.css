@@ -1,3 +1,5 @@
+/* Global Styles */
+
 * {
   padding: 0;
   margin: 0;
@@ -25,77 +27,63 @@ html {
   }
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 150px;
-  height: 10vh;
-  background-color: rgba(18, 18, 18, 0.9);
-  font-family: "Montserrat", sans-serif, Arial;
-  width: 100%;
+#topBtn {
   position: fixed;
-  z-index: 1;
-}
-
-.logo img {
-  width: 250px;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
-  z-index: 100;
-  align-items: center;
-}
-
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 0.5px;
-  font-weight: 500;
-  font-size: 1.1rem;
-  padding: 10px 20px;
-  text-transform: uppercase;
-}
-
-.btn-1 {
-  background-color: #303f9f;
+  z-index: 99;
+  cursor: pointer;
+  bottom: calc(var(--vh, 1vh) * 40);
+  right: 4%;
   border-radius: 50px;
+  background-color: rgba(16, 24, 75, 1);
+  font-size: 1.1rem;
+  font-weight: 200;
+  border: none;
+  padding: 20px 10px;
+  color: #fff;
+  border: 3px solid #fff;
+  text-align: center;
 }
 
-.burger {
-  display: none;
+#topBtn:hover {
+  background-color: rgba(18, 18, 18, 0.9);
+  bottom: calc(var(--vh, 1vh) * 40.5);
 }
 
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px;
-  transition: all 0.3s ease;
+#topBtn:active {
+  background-color: rgba(18, 18, 18, 0.9);
+  bottom: calc(var(--vh, 1vh) * 39.5);
 }
 
-/* Smartphones (portrait and landscape) */
-@media screen and (max-width: 1499px) {
-  .logo img {
-    width: 200px;
-  }
+/* Media Queries */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  /* --------------- Styles for navigation bar --------------- */
 
   nav {
-    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+    height: 10vh;
+    background-color: rgba(18, 18, 18, 0.9);
+    font-family: "Montserrat", sans-serif, Arial;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .logo img {
+    width: 200px;
   }
 
   .nav-links {
     position: absolute;
     right: 0px;
-    /* height: 90vh;
-    top: 10vh; */
     height: calc(var(--vh, 1vh) * 90);
     top: 150px;
     display: flex;
@@ -106,24 +94,28 @@ nav {
     transition: transform 0.5s ease-in;
     justify-content: start;
     background-color: rgba(18, 18, 18, 0.9);
+    z-index: 99;
+    align-items: center;
   }
 
   .nav-links li {
+    list-style: none;
     opacity: 0;
-    margin: 30px 0;
+    margin: 3rem 0;
   }
 
   .nav-links li:first-child {
-    margin: 20px 0 30px 0;
+    margin: 2rem 0 3rem 0;
   }
 
-  .nav-links li:last-child {
-    margin-top: 70px;
-  }
-
-  .burger {
-    display: block;
-    cursor: pointer;
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
   }
 
   .cart {
@@ -131,6 +123,7 @@ nav {
     flex-flow: column wrap;
     align-items: center;
   }
+
   .cart-value {
     min-height: 30px;
     min-width: 30px;
@@ -148,19 +141,427 @@ nav {
   .cart a img {
     width: 40px;
   }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  /* --------------- Styles for hero section --------------- */
+
+  .main {
+    background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
+    height: calc(var(--vh, 1vh) * 100);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* --------------- Styles for about us section --------------- */
+
+  .about {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .about-header {
+    width: 80%;
+    margin: 160px 10% 0 10%;
+    height: auto;
+  }
+
+  .about-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 2%;
+  }
+
+  .about-text {
+    width: 35%;
+    margin: 5% 5% 0 10%;
+  }
+
+  .about-text br {
+    margin-bottom: 27px;
+  }
+
+  .about-text p {
+    font-weight: 200;
+    line-height: 34px;
+    margin: 27px 0;
+  }
+
+  .about-text p:first-child {
+    margin: 0 0 27px 0;
+  }
+
+  .history-block {
+    width: 40%;
+    background-color: rgba(16, 24, 75, 1);
+    margin: 5% 10% 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+
+  .history-block h2 {
+    font-weight: 900;
+    font-size: 3.3rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .history-block ul {
+    list-style: none;
+  }
+
+  .history-block ul li {
+    margin: 60px 0;
+  }
+
+  table {
+    color: #fff;
+    width: 90%;
+    margin: 0 5%;
+    border-collapse: separate;
+    border-spacing: 0 2rem;
+  }
+
+  td,
+  th {
+    padding: 1rem;
+  }
+
+  .year-column {
+    width: 1rem;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  .milestone-column {
+    font-weight: 200;
+    font-size: 1rem;
+  }
+
+  /* --------------- Styles for our beers section --------------- */
+
+  .our-beers {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+
+  .our-beers-header {
+    width: 80%;
+    margin: 160px 10% 0 10%;
+    height: auto;
+  }
+
+  .our-beers-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 5%;
+    line-height: 4.5rem;
+  }
+
+  .our-beers-header h3 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+
+  .circle-sketch-highlight {
+    position: relative;
+  }
+
+  .circle-sketch-highlight::before {
+    content: "";
+    z-index: -1;
+    left: -0.5em;
+    top: -0.1em;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(235, 151, 54, 1);
+    position: absolute;
+
+    width: 105%;
+    height: 1em;
+    opacity: 0.7;
+    transform: rotate(2deg);
+    border-radius: 50%;
+    padding: 0.1em 0.25em;
+  }
+
+  .circle-sketch-highlight::after {
+    content: "";
+    z-index: -1;
+    left: -0.5em;
+    top: 0.1em;
+    padding: 0.1em 0.25em;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(235, 151, 54, 1);
+
+    border-top-color: transparent;
+    position: absolute;
+    width: 105%;
+    height: 1em;
+    transform: rotate(-1deg);
+    opacity: 0.7;
+    border-radius: 50%;
+  }
+
+  .flex-child {
+    width: 80%;
+    margin: 0 10%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+
+  .img-wrapper {
+    width: 250px;
+    margin: 0 10px;
+  }
+
+  .img-wrapper h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-kerning: 0.5rem;
+    margin: 10% 0 2% 0;
+  }
+
+  .img-wrapper p {
+    font-size: 1.1rem;
+    font-weight: 200;
+    font-kerning: 0.5rem;
+  }
+
+  .img-wrapper hr {
+    margin: 10% 0;
+  }
+
+  .our-beers img {
+    width: 250px;
+  }
+
+  /* --------------- Styles for footer --------------- */
+
+  .flex-footer {
+    display: flex;
+    bottom: 0;
+    min-height: calc(var(--vh, 1vh) * 30);
+    background-color: rgba(16, 24, 75, 1);
+    flex-flow: row wrap;
+    margin-top: 5%;
+    color: #fff;
+  }
+
+  .logo-header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin: 5% 10% 0 10%;
+  }
+
+  .footer-main {
+    width: 80%;
+    margin: 0 15% 5% 15%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    text-align: center;
+    flex-flow: row nowrap;
+  }
+
+  .footer-main hr {
+    margin-top: 8px;
+    border-top: 2px solid #fff;
+  }
+
+  .footer-main ul {
+    list-style: none;
+  }
+
+  .footer-main ul li:first-child {
+    padding-top: 2rem;
+  }
+
+  .footer-main ul li {
+    padding: 0.8rem 0;
+    text-align: center;
+  }
+
+  .footer-main ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .social-media-menu ul li {
+    display: inline-block;
+    padding: 2rem 0.7rem;
+  }
+
+  .newsletter-wrapper input {
+    border-radius: 2rem;
+    font-size: 1rem;
+    padding: 8px 10px;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    border: none;
+    background-color: rgba(83, 83, 83, 0.4);
+    color: #fff;
+    outline: none;
+  }
+
+  #signUpBtn {
+    text-decoration: none;
+    background-color: rgba(48, 63, 159, 1);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 1.4rem;
+    margin-top: 5%;
+    display: inline-block;
+  }
+
+  .footer-main div {
+    width: 100%;
+    margin: 5% 0;
+  }
+
+  .footer-main div hr {
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    margin: 2% 10% 5% 10%;
+    font-size: 0.7rem;
+  }
 }
 
-/* Desktops and laptops */
-@media screen and (min-width: 1500px) {
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = Between 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* --------------- Styles for navigation bar --------------- */
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+    height: 10vh;
+    background-color: rgba(18, 18, 18, 0.9);
+    font-family: "Montserrat", sans-serif, Arial;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
   .nav-links {
-    width: 40%;
+    position: absolute;
+    right: 0px;
+    height: calc(var(--vh, 1vh) * 90);
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    justify-content: start;
+    background-color: rgba(18, 18, 18, 0.9);
+    z-index: 99;
+    align-items: center;
+  }
+
+  .nav-links li {
+    list-style: none;
+    opacity: 0;
+    margin: 3rem 0;
+  }
+
+  .nav-links li:first-child {
+    margin: 2rem 0 3rem 0;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
   }
 
   .cart {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-items: center;
   }
+
   .cart-value {
     min-height: 30px;
     min-width: 30px;
@@ -171,142 +572,987 @@ nav {
     text-align: center;
     vertical-align: middle;
     font-size: 1rem;
-    line-height: 35px;
+    line-height: 30px;
     padding: 5px;
   }
 
   .cart a img {
     width: 40px;
   }
-}
 
-.nav-active {
-  transform: translateX(0%);
-}
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
 
-@keyframes navLinkFade {
-  from {
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
     opacity: 0;
-    transform: translateX(50px);
   }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
   }
-}
 
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
+  .nav-active {
+    transform: translateX(0%);
+  }
 
-.toggle .line2 {
-  opacity: 0;
-}
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
 
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
+  /* --------------- Styles for hero section --------------- */
 
-.main {
-  background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
-  height: calc(var(--vh, 1vh) * 100);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  .main {
+    background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
+    height: calc(var(--vh, 1vh) * 100);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.about {
-  display: flex;
-  flex-flow: row wrap;
-  min-height: calc(var(--vh, 1vh) * 100);
-  justify-content: space-between;
-  align-content: flex-start;
-}
+  /* --------------- Styles for about us section --------------- */
 
-.about-header {
-  width: 80%;
-  margin: 160px 10% 0 10%;
-  height: auto;
-}
-
-.about-header h1 {
-  font-weight: 900;
-  font-size: 4.2rem;
-  margin-bottom: 2%;
-}
-
-.about-text {
-  width: 35%;
-  margin: 5% 5% 0 10%;
-}
-
-.about-text br {
-  margin-bottom: 27px;
-}
-
-.about-text p {
-  font-weight: 200;
-  line-height: 34px;
-  margin: 27px 0;
-}
-
-.about-text p:first-child {
-  margin: 0 0 27px 0;
-}
-
-.history-block {
-  width: 40%;
-  background-color: rgba(16, 24, 75, 1);
-  margin: 5% 10% 0 0;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: flex-start;
-}
-
-.history-block h2 {
-  font-weight: 900;
-  font-size: 3.3rem;
-  color: #fff;
-  text-align: center;
-  margin-top: 40px;
-  width: 100%;
-}
-
-.history-block ul {
-  list-style: none;
-}
-
-.history-block ul li {
-  margin: 60px 0;
-}
-
-table {
-  color: #fff;
-  width: 90%;
-  margin: 0 5%;
-  border-collapse:separate;
-  border-spacing:0 2rem;
-}
-
-td, th {
-  padding: 1rem;
-}
-
-.year-column {
-  width: 1rem;
-  font-weight: 900;
-  font-size: 2rem;
-}
-
-.milestone-column {
-  font-weight: 200;
-  font-size: 1rem;
-}
-
-
-@media screen and (max-width: 780px) {
   .about {
+    display: flex;
     flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .about-header {
+    width: 80%;
+    margin: 160px 10% 0 10%;
+    height: auto;
+  }
+
+  .about-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 2%;
+  }
+
+  .about-text {
+    width: 35%;
+    margin: 5% 5% 0 10%;
+  }
+
+  .about-text br {
+    margin-bottom: 27px;
+  }
+
+  .about-text p {
+    font-weight: 200;
+    line-height: 34px;
+    margin: 27px 0;
+  }
+
+  .about-text p:first-child {
+    margin: 0 0 27px 0;
+  }
+
+  .history-block {
+    width: 40%;
+    background-color: rgba(16, 24, 75, 1);
+    margin: 5% 10% 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+
+  .history-block h2 {
+    font-weight: 900;
+    font-size: 3.3rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .history-block ul {
+    list-style: none;
+  }
+
+  .history-block ul li {
+    margin: 60px 0;
+  }
+
+  table {
+    color: #fff;
+    width: 90%;
+    margin: 0 5%;
+    border-collapse: separate;
+    border-spacing: 0 2rem;
+  }
+
+  td,
+  th {
+    padding: 1rem;
+  }
+
+  .year-column {
+    width: 1rem;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  .milestone-column {
+    font-weight: 200;
+    font-size: 1rem;
+  }
+
+  /* --------------- Styles for our beers section --------------- */
+
+  .our-beers {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+
+  .our-beers-header {
+    width: 80%;
+    margin: 160px 10% 0 10%;
+    height: auto;
+  }
+
+  .our-beers-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 5%;
+    line-height: 4.5rem;
+  }
+
+  .our-beers-header h3 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+
+  .circle-sketch-highlight {
+    position: relative;
+  }
+
+  .circle-sketch-highlight::before {
+    content: "";
+    z-index: -1;
+    left: -0.5em;
+    top: -0.1em;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(235, 151, 54, 1);
+    position: absolute;
+
+    width: 105%;
+    height: 1em;
+    opacity: 0.7;
+    transform: rotate(2deg);
+    border-radius: 50%;
+    padding: 0.1em 0.25em;
+  }
+
+  .circle-sketch-highlight::after {
+    content: "";
+    z-index: -1;
+    left: -0.5em;
+    top: 0.1em;
+    padding: 0.1em 0.25em;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(235, 151, 54, 1);
+
+    border-top-color: transparent;
+    position: absolute;
+    width: 105%;
+    height: 1em;
+    transform: rotate(-1deg);
+    opacity: 0.7;
+    border-radius: 50%;
+  }
+
+  .flex-child {
+    width: 80%;
+    margin: 0 10%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+
+  .img-wrapper {
+    width: 250px;
+    margin: 0 10px;
+  }
+
+  .img-wrapper h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-kerning: 0.5rem;
+    margin: 10% 0 2% 0;
+  }
+
+  .img-wrapper p {
+    font-size: 1.1rem;
+    font-weight: 200;
+    font-kerning: 0.5rem;
+  }
+
+  .img-wrapper hr {
+    margin: 10% 0;
+  }
+
+  .our-beers img {
+    width: 250px;
+  }
+
+  /* --------------- Styles for footer --------------- */
+
+  .flex-footer {
+    display: flex;
+    bottom: 0;
+    min-height: calc(var(--vh, 1vh) * 30);
+    background-color: rgba(16, 24, 75, 1);
+    flex-flow: row wrap;
+    margin-top: 5%;
+    color: #fff;
+  }
+
+  .logo-header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin: 5% 10% 0 10%;
+  }
+
+  .footer-main {
+    width: 80%;
+    margin: 0 15% 2% 15%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    text-align: center;
+    flex-flow: row wrap;
+  }
+
+  .footer-main hr {
+    margin-top: 8px;
+    border-top: 2px solid #fff;
+  }
+
+  .footer-main ul {
+    list-style: none;
+  }
+
+  .footer-main ul li:first-child {
+    padding-top: 2rem;
+  }
+
+  .footer-main ul li {
+    padding: 0.8rem 0;
+    text-align: center;
+  }
+
+  .footer-main ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .social-media-menu ul li {
+    display: inline-block;
+    padding: 2rem 0.7rem;
+  }
+
+  .newsletter-wrapper input {
+    border-radius: 2rem;
+    font-size: 1rem;
+    padding: 8px 10px;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    border: none;
+    background-color: rgba(83, 83, 83, 0.4);
+    color: #fff;
+    outline: none;
+  }
+
+  #signUpBtn {
+    text-decoration: none;
+    background-color: rgba(48, 63, 159, 1);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 1.4rem;
+    margin-top: 5%;
+    display: inline-block;
+  }
+
+  .footer-main div {
+    width: 50%;
+    margin-bottom: 2%;
+  }
+
+  .footer-main div:last-child {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .footer-main div hr {
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    margin: 2% 10% 5% 10%;
+    font-size: 0.7rem;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = Between 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* --------------- Styles for navigation bar --------------- */
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+    height: 10vh;
+    background-color: rgba(18, 18, 18, 0.9);
+    font-family: "Montserrat", sans-serif, Arial;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: calc(var(--vh, 1vh) * 90);
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    justify-content: start;
+    background-color: rgba(18, 18, 18, 0.9);
+    z-index: 99;
+    align-items: center;
+  }
+
+  .nav-links li {
+    list-style: none;
+    opacity: 0;
+    margin: 3rem 0;
+  }
+
+  .nav-links li:first-child {
+    margin: 2rem 0 3rem 0;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+
+  .cart {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .cart-value {
+    min-height: 30px;
+    min-width: 30px;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: #fff;
+    color: rgba(18, 18, 18, 1);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 30px;
+    padding: 5px;
+  }
+
+  .cart a img {
+    width: 40px;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  /* --------------- Styles for hero section --------------- */
+
+  .main {
+    background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
+    height: calc(var(--vh, 1vh) * 100);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* --------------- Styles for about us section --------------- */
+
+  .about {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .about-header {
+    width: 80%;
+    margin: 160px 10% 0 10%;
+    height: auto;
+  }
+
+  .about-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 2%;
+  }
+
+  .about-text {
+    width: 35%;
+    margin: 5% 5% 0 10%;
+  }
+
+  .about-text br {
+    margin-bottom: 27px;
+  }
+
+  .about-text p {
+    font-weight: 200;
+    line-height: 34px;
+    margin: 27px 0;
+  }
+
+  .about-text p:first-child {
+    margin: 0 0 27px 0;
+  }
+
+  .history-block {
+    width: 40%;
+    background-color: rgba(16, 24, 75, 1);
+    margin: 5% 10% 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+
+  .history-block h2 {
+    font-weight: 900;
+    font-size: 3.3rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .history-block ul {
+    list-style: none;
+  }
+
+  .history-block ul li {
+    margin: 60px 0;
+  }
+
+  table {
+    color: #fff;
+    width: 90%;
+    margin: 0 5%;
+    border-collapse: separate;
+    border-spacing: 0 2rem;
+  }
+
+  td,
+  th {
+    padding: 1rem;
+  }
+
+  .year-column {
+    width: 1rem;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  .milestone-column {
+    font-weight: 200;
+    font-size: 1rem;
+  }
+
+  /* --------------- Styles for our beers section --------------- */
+
+  .our-beers {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+
+  .our-beers-header {
+    width: 80%;
+    margin: 160px 10% 0 10%;
+    height: auto;
+  }
+
+  .our-beers-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 5%;
+    line-height: 4.5rem;
+  }
+
+  .our-beers-header h3 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+
+  .circle-sketch-highlight {
+    position: relative;
+  }
+
+  .circle-sketch-highlight::before {
+    content: "";
+    z-index: -1;
+    left: -0.5em;
+    top: -0.1em;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(235, 151, 54, 1);
+    position: absolute;
+
+    width: 105%;
+    height: 1em;
+    opacity: 0.7;
+    transform: rotate(2deg);
+    border-radius: 50%;
+    padding: 0.1em 0.25em;
+  }
+
+  .circle-sketch-highlight::after {
+    content: "";
+    z-index: -1;
+    left: -0.5em;
+    top: 0.1em;
+    padding: 0.1em 0.25em;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(235, 151, 54, 1);
+
+    border-top-color: transparent;
+    position: absolute;
+    width: 105%;
+    height: 1em;
+    transform: rotate(-1deg);
+    opacity: 0.7;
+    border-radius: 50%;
+  }
+
+  .flex-child {
+    width: 80%;
+    margin: 0 10%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+
+  .img-wrapper {
+    width: 250px;
+    margin: 0 10px;
+  }
+
+  .img-wrapper h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-kerning: 0.5rem;
+    margin: 10% 0 2% 0;
+  }
+
+  .img-wrapper p {
+    font-size: 1.1rem;
+    font-weight: 200;
+    font-kerning: 0.5rem;
+  }
+
+  .img-wrapper hr {
+    margin: 10% 0;
+  }
+
+  .our-beers img {
+    width: 250px;
+  }
+
+  /* --------------- Styles for footer --------------- */
+
+  .flex-footer {
+    display: flex;
+    bottom: 0;
+    min-height: calc(var(--vh, 1vh) * 30);
+    background-color: rgba(16, 24, 75, 1);
+    flex-flow: row wrap;
+    margin-top: 5%;
+    color: #fff;
+  }
+
+  .logo-header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin: 5% 10% 0 10%;
+  }
+
+  .footer-main {
+    width: 80%;
+    margin: 0 15% 2% 15%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    text-align: center;
+    flex-flow: row wrap;
+  }
+
+  .footer-main hr {
+    margin-top: 8px;
+    border-top: 2px solid #fff;
+  }
+
+  .footer-main ul {
+    list-style: none;
+  }
+
+  .footer-main ul li:first-child {
+    padding-top: 2rem;
+  }
+
+  .footer-main ul li {
+    padding: 0.8rem 0;
+    text-align: center;
+  }
+
+  .footer-main ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .social-media-menu ul li {
+    display: inline-block;
+    padding: 2rem 0.7rem;
+  }
+
+  .newsletter-wrapper input {
+    border-radius: 2rem;
+    font-size: 1rem;
+    padding: 8px 10px;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    border: none;
+    background-color: rgba(83, 83, 83, 0.4);
+    color: #fff;
+    outline: none;
+  }
+
+  #signUpBtn {
+    text-decoration: none;
+    background-color: rgba(48, 63, 159, 1);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 1.4rem;
+    margin-top: 5%;
+    display: inline-block;
+  }
+
+  .footer-main div {
+    width: 50%;
+    margin-bottom: 2%;
+  }
+
+  .footer-main div:last-child {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .footer-main div hr {
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    margin: 2% 10% 5% 10%;
+    font-size: 0.7rem;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = Between 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  /* --------------- Styles for navigation bar --------------- */
+  .nav-links li {
+    margin: 2rem 0;
+  }
+
+  .nav-links li:first-child {
+    margin: 1rem 0 2rem 0;
+  }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = Between 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* --------------- Styles for navigation bar --------------- */
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+    height: 10vh;
+    background-color: rgba(18, 18, 18, 0.9);
+    font-family: "Montserrat", sans-serif, Arial;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: calc(var(--vh, 1vh) * 90);
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    justify-content: start;
+    background-color: rgba(18, 18, 18, 0.9);
+    z-index: 99;
+    align-items: center;
+  }
+
+  .nav-links li {
+    list-style: none;
+    opacity: 0;
+    margin: 2rem 0;
+  }
+
+  .nav-links li:first-child {
+    margin: 1rem 0 2rem 0;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+
+  .cart {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .cart-value {
+    min-height: 30px;
+    min-width: 30px;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: #fff;
+    color: rgba(18, 18, 18, 1);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 30px;
+    padding: 5px;
+  }
+
+  .cart a img {
+    width: 40px;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  /* --------------- Styles for hero section --------------- */
+
+  .main {
+    background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
+    height: calc(var(--vh, 1vh) * 100);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* --------------- Styles for about us section --------------- */
+
+  .about {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .about-header {
+    width: 80%;
+    margin: 115px 10% 0 10%;
+    height: auto;
+  }
+
+  .about-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 2%;
   }
 
   .about-text {
@@ -314,114 +1560,717 @@ td, th {
     margin: 10% 10% 0 10%;
   }
 
+  .about-text br {
+    margin-bottom: 27px;
+  }
+
+  .about-text p {
+    font-weight: 200;
+    line-height: 34px;
+    margin: 27px 0;
+  }
+
+  .about-text p:first-child {
+    margin: 0 0 27px 0;
+  }
+
   .history-block {
     width: 80%;
-    margin:0 10%;
+    background-color: rgba(16, 24, 75, 1);
+    margin: 0 10%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+
+  .history-block h2 {
+    font-weight: 900;
+    font-size: 3.3rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .history-block ul {
+    list-style: none;
+  }
+
+  .history-block ul li {
+    margin: 60px 0;
+  }
+
+  table {
+    color: #fff;
+    width: 90%;
+    margin: 0 5%;
+    border-collapse: separate;
+    border-spacing: 0 2rem;
+  }
+
+  td,
+  th {
+    padding: 1rem;
+  }
+
+  .year-column {
+    width: 1rem;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  .milestone-column {
+    font-weight: 200;
+    font-size: 1rem;
+  }
+
+  /* --------------- Styles for our beers section --------------- */
+
+  .our-beers {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+
+  .our-beers-header {
+    width: 80%;
+    margin: 115px 10% 0 10%;
+    height: auto;
+  }
+
+  .our-beers-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 5%;
+    line-height: 4.5rem;
+  }
+
+  .our-beers-header h3 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+
+  .circle-sketch-highlight {
+    position: relative;
+  }
+
+  .circle-sketch-highlight::before {
+    content: "";
+    z-index: -1;
+    left: -0.5em;
+    top: -0.1em;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(235, 151, 54, 1);
+    position: absolute;
+
+    width: 105%;
+    height: 1em;
+    opacity: 0.7;
+    transform: rotate(2deg);
+    border-radius: 50%;
+    padding: 0.1em 0.25em;
+  }
+
+  .circle-sketch-highlight::after {
+    content: "";
+    z-index: -1;
+    left: -0.5em;
+    top: 0.1em;
+    padding: 0.1em 0.25em;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(235, 151, 54, 1);
+
+    border-top-color: transparent;
+    position: absolute;
+    width: 105%;
+    height: 1em;
+    transform: rotate(-1deg);
+    opacity: 0.7;
+    border-radius: 50%;
+  }
+
+  .flex-child {
+    width: 80%;
+    margin: 0 10%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+
+  .img-wrapper {
+    width: 250px;
+    margin: 0 10px;
+  }
+
+  .img-wrapper h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-kerning: 0.5rem;
+    margin: 10% 0 2% 0;
+  }
+
+  .img-wrapper p {
+    font-size: 1.1rem;
+    font-weight: 200;
+    font-kerning: 0.5rem;
+  }
+
+  .img-wrapper hr {
+    margin: 10% 0;
+  }
+
+  .our-beers img {
+    width: 250px;
+  }
+
+  /* --------------- Styles for footer --------------- */
+
+  .flex-footer {
+    display: flex;
+    bottom: 0;
+    min-height: calc(var(--vh, 1vh) * 30);
+    background-color: rgba(16, 24, 75, 1);
+    flex-flow: row wrap;
+    margin-top: 5%;
+    color: #fff;
+  }
+
+  .logo-header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 5% 10% 0 10%;
+  }
+
+  .footer-main {
+    width: 80%;
+    margin: 0 15% 2% 15%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    text-align: center;
+    flex-flow: row wrap;
+  }
+
+  .footer-main hr {
+    margin-top: 8px;
+    border-top: 2px solid #fff;
+  }
+
+  .footer-main ul {
+    list-style: none;
+  }
+
+  .footer-main ul li:first-child {
+    padding-top: 2rem;
+  }
+
+  .footer-main ul li {
+    padding: 0.8rem 0;
+    text-align: center;
+  }
+
+  .footer-main ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .social-media-menu ul li {
+    display: inline-block;
+    padding: 2rem 0.7rem;
+  }
+
+  .newsletter-wrapper input {
+    border-radius: 2rem;
+    font-size: 1rem;
+    padding: 8px 10px;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    border: none;
+    background-color: rgba(83, 83, 83, 0.4);
+    color: #fff;
+    outline: none;
+  }
+
+  #signUpBtn {
+    text-decoration: none;
+    background-color: rgba(48, 63, 159, 1);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 1.4rem;
+    margin-top: 5%;
+    display: inline-block;
+  }
+
+  .footer-main div {
+    width: 100%;
+    margin-bottom: 2%;
+    margin: 8% 0;
+  }
+
+  .footer-main div hr {
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    margin: 2% 10% 5% 10%;
+    font-size: 0.7rem;
   }
 }
 
-.our-beers {
-  display: flex;
-  flex-flow: row wrap;
-  min-height: calc(var(--vh, 1vh) * 100);
-  justify-content: space-around;
-  align-content: flex-start;
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = Between 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* --------------- Styles for navigation bar --------------- */
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+    height: 10vh;
+    background-color: rgba(18, 18, 18, 0.9);
+    font-family: "Montserrat", sans-serif, Arial;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: calc(var(--vh, 1vh) * 90);
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    justify-content: start;
+    background-color: rgba(18, 18, 18, 0.9);
+    z-index: 99;
+    align-items: center;
+  }
+
+  .nav-links li {
+    list-style: none;
+    opacity: 0;
+    margin: 2rem 0;
+  }
+
+  .nav-links li:first-child {
+    margin: 1rem 0 2rem 0;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+
+  .cart {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .cart-value {
+    min-height: 30px;
+    min-width: 30px;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: #fff;
+    color: rgba(18, 18, 18, 1);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 30px;
+    padding: 5px;
+  }
+
+  .cart a img {
+    width: 40px;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  /* --------------- Styles for hero section --------------- */
+
+  .main {
+    background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
+    height: calc(var(--vh, 1vh) * 100);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* --------------- Styles for about us section --------------- */
+
+  .about {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .about-header {
+    width: 80%;
+    margin: 115px 10% 0 10%;
+    height: auto;
+  }
+
+  .about-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 2%;
+  }
+
+  .about-text {
+    width: 80%;
+    margin: 10% 10% 0 10%;
+  }
+
+  .about-text br {
+    margin-bottom: 27px;
+  }
+
+  .about-text p {
+    font-weight: 200;
+    line-height: 34px;
+    margin: 27px 0;
+  }
+
+  .about-text p:first-child {
+    margin: 0 0 27px 0;
+  }
+
+  .history-block {
+    width: 80%;
+    background-color: rgba(16, 24, 75, 1);
+    margin: 0 10%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+
+  .history-block h2 {
+    font-weight: 900;
+    font-size: 3.3rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .history-block ul {
+    list-style: none;
+  }
+
+  .history-block ul li {
+    margin: 60px 0;
+  }
+
+  table {
+    color: #fff;
+    width: 90%;
+    margin: 0 5%;
+    border-collapse: separate;
+    border-spacing: 0 2rem;
+  }
+
+  td,
+  th {
+    padding: 1rem;
+  }
+
+  .year-column {
+    width: 1rem;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  .milestone-column {
+    font-weight: 200;
+    font-size: 1rem;
+  }
+
+  /* --------------- Styles for our beers section --------------- */
+
+  .our-beers {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+
+  .our-beers-header {
+    width: 80%;
+    margin: 115px 10% 0 10%;
+    height: auto;
+  }
+
+  .our-beers-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 5%;
+    line-height: 4.5rem;
+  }
+
+  .our-beers-header h3 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+
+  .circle-sketch-highlight {
+    position: relative;
+  }
+
+  .circle-sketch-highlight::before {
+    content: "";
+    z-index: -1;
+    left: -0.5em;
+    top: -0.1em;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(235, 151, 54, 1);
+    position: absolute;
+
+    width: 105%;
+    height: 1em;
+    opacity: 0.7;
+    transform: rotate(2deg);
+    border-radius: 50%;
+    padding: 0.1em 0.25em;
+  }
+
+  .circle-sketch-highlight::after {
+    content: "";
+    z-index: -1;
+    left: -0.5em;
+    top: 0.1em;
+    padding: 0.1em 0.25em;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(235, 151, 54, 1);
+
+    border-top-color: transparent;
+    position: absolute;
+    width: 105%;
+    height: 1em;
+    transform: rotate(-1deg);
+    opacity: 0.7;
+    border-radius: 50%;
+  }
+
+  .flex-child {
+    width: 80%;
+    margin: 0 10%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+
+  .img-wrapper {
+    width: 250px;
+    margin: 0 10px;
+  }
+
+  .img-wrapper h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-kerning: 0.5rem;
+    margin: 10% 0 2% 0;
+  }
+
+  .img-wrapper p {
+    font-size: 1.1rem;
+    font-weight: 200;
+    font-kerning: 0.5rem;
+  }
+
+  .img-wrapper hr {
+    margin: 10% 0;
+  }
+
+  .our-beers img {
+    width: 250px;
+  }
+
+  /* --------------- Styles for footer --------------- */
+
+  .flex-footer {
+    display: flex;
+    bottom: 0;
+    min-height: calc(var(--vh, 1vh) * 30);
+    background-color: rgba(16, 24, 75, 1);
+    flex-flow: row wrap;
+    margin-top: 5%;
+    color: #fff;
+  }
+
+  .logo-header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 5% 10% 0 10%;
+  }
+
+  .footer-main {
+    width: 80%;
+    margin: 0 15% 2% 15%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    text-align: center;
+    flex-flow: row wrap;
+  }
+
+  .footer-main hr {
+    margin-top: 8px;
+    border-top: 2px solid #fff;
+  }
+
+  .footer-main ul {
+    list-style: none;
+  }
+
+  .footer-main ul li:first-child {
+    padding-top: 2rem;
+  }
+
+  .footer-main ul li {
+    padding: 0.8rem 0;
+    text-align: center;
+  }
+
+  .footer-main ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .social-media-menu ul li {
+    display: inline-block;
+    padding: 2rem 0.7rem;
+  }
+
+  .newsletter-wrapper input {
+    border-radius: 2rem;
+    font-size: 1rem;
+    padding: 8px 10px;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    border: none;
+    background-color: rgba(83, 83, 83, 0.4);
+    color: #fff;
+    outline: none;
+  }
+
+  #signUpBtn {
+    text-decoration: none;
+    background-color: rgba(48, 63, 159, 1);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 1.4rem;
+    margin-top: 5%;
+    display: inline-block;
+  }
+
+  .footer-main div {
+    width: 100%;
+    margin-bottom: 2%;
+    margin: 8% 0;
+  }
+
+  .footer-main div hr {
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    margin: 2% 10% 5% 10%;
+    font-size: 0.7rem;
+  }
 }
-
-.our-beers-header {
-  width: 80%;
-  margin: 160px 10% 0 10%;
-  height: auto;
-}
-
-.our-beers-header h1 {
-  font-weight: 900;
-  font-size: 4.2rem;
-  margin-bottom: 5%;
-  line-height: 4.5rem;
-}
-
-.our-beers-header h3 {
-  font-weight: 200;
-  font-size: 1.5rem;
-  margin-bottom: 2%;
-}
-
-.circle-sketch-highlight {
-  position: relative;
-}
-
-.circle-sketch-highlight::before {
-  content: "";
-  z-index: -1;
-  left: -0.5em;
-  top: -0.1em;
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgba(235, 151, 54, 1);
-  position: absolute;
-
-  width: 105%;
-  height: 1em;
-  opacity: 0.7;
-  transform: rotate(2deg);
-  border-radius: 50%;
-  padding: 0.1em 0.25em;
-}
-
-.circle-sketch-highlight::after {
-  content: "";
-  z-index: -1;
-  left: -0.5em;
-  top: 0.1em;
-  padding: 0.1em 0.25em;
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgba(235, 151, 54, 1);
-
-  border-top-color: transparent;
-  position: absolute;
-  width: 105%;
-  height: 1em;
-  transform: rotate(-1deg);
-  opacity: 0.7;
-  border-radius: 50%;
-}
-
-.flex-child {
-  width: 80%;
-  margin: 0 10%;
-  height: auto;
-  display: flex;
-  flex-flow: row wrap;
-  min-height: calc(var(--vh, 1vh) * 100);
-  justify-content: space-around;
-  align-content: flex-start;
-}
-
-.img-wrapper {
-  width: 250px;
-  margin: 0 10px;
-}
-
-.img-wrapper h4 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  font-kerning: 0.5rem;
-  margin: 10% 0 2% 0;
-}
-
-.img-wrapper p {
-  font-size: 1.1rem;
-  font-weight: 200;
-  font-kerning: 0.5rem;
-}
-
-.img-wrapper hr {
-  margin: 10% 0;
-}
-
-.our-beers img {
-  width: 250px;
-}
-
