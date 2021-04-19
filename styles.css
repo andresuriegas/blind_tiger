@@ -292,7 +292,7 @@ html {
   }
 
   .our-beers-header {
-    width: 80%;
+    width: 55%;
     margin: 160px 10% 0 10%;
     height: auto;
   }
@@ -395,14 +395,14 @@ html {
     display: flex;
     flex-flow: row wrap;
     min-height: calc(var(--vh, 1vh) * 100);
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
     overflow: hidden;
   }
 
   .flex-item-visit-text {
-    width: 80%;
-    margin: 5% 10% 0 10%;
+    width: 55%;
+    margin: 1% 10% 0 10%;
   }
 
   .vflex-item-visit-text br {
@@ -431,8 +431,22 @@ html {
     display: none;
   }
 
-  .flex-item-photos img {
-    width: 100%;
+  .flex-item-photos #photo4 {
+    background-image: url(./Assets/pexels-cottonbro-5532660.jpg);
+    height: calc(var(--vh, 1vh) * 100);
+    width: 50%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .flex-item-photos #photo5 {
+    background-image: url(./Assets/pexels-cottonbro-5532830.jpg);
+    height: calc(var(--vh, 1vh) * 100);
+    width: 50%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .flex-item-badges {
@@ -440,8 +454,8 @@ html {
     justify-content: center;
     align-content: flex-start;
     flex-flow: row wrap;
-    width: 35%;
-    margin-right: 5%;
+    width: 20%;
+    margin-right: 22.5%;
     order: 5;
     margin-top: -30rem;
   }
@@ -478,8 +492,8 @@ html {
   }
 
   .flex-item-visit-book-cta {
-    width: 50%;
-    margin: -30rem 0 0 5%;
+    width: 35%;
+    margin: -30rem 0 0 22.5%;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -520,6 +534,8 @@ html {
     align-content: center;
     overflow: hidden;
     order: 5;
+    width: 35%;
+    margin-left: 22.5%;
   }
 
   .map-img {
@@ -532,10 +548,16 @@ html {
   }
 
   .flex-item-visit-directions-cta {
-    width: 80%;
-    margin: -11rem 10% 0 10%;
+    width: 35%;
+    margin: 10rem 22.5% 0 -15%;
+    margin-right: 22.5%;
     padding: 1rem;
     order: 6;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 
   .flex-item-visit-directions-cta .visit-cta {
@@ -1043,8 +1065,22 @@ html {
     display: none;
   }
 
-  .flex-item-photos img {
+  .flex-item-photos #photo4 {
+    background-image: url(./Assets/pexels-cottonbro-5532660.jpg);
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .flex-item-photos #photo5 {
+    background-image: url(./Assets/pexels-cottonbro-5532830.jpg);
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .flex-item-badges {
@@ -1660,8 +1696,22 @@ html {
     display: none;
   }
 
-  .flex-item-photos img {
+  .flex-item-photos #photo4 {
+    background-image: url(./Assets/pexels-cottonbro-5532660.jpg);
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .flex-item-photos #photo5 {
+    background-image: url(./Assets/pexels-cottonbro-5532830.jpg);
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .flex-item-badges {
@@ -2295,8 +2345,22 @@ html {
     display: none;
   }
 
-  .flex-item-photos img {
+  .flex-item-photos #photo4 {
+    background-image: url(./Assets/pexels-cottonbro-5532660.jpg);
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .flex-item-photos #photo5 {
+    background-image: url(./Assets/pexels-cottonbro-5532830.jpg);
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .flex-item-badges {
@@ -2919,9 +2983,35 @@ html {
     width: 100%;
   }
 
-  .flex-item-photos img {
+  .flex-item-photos #photo1 {
+    background-image: url(./Assets/pexels-cottonbro-5538160.jpg);
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
-    height: auto;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .flex-item-photos #photo2 {
+    background-image: url(./Assets/pexels-cottonbro-5537784.jpg);
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .flex-item-photos #photo3 {
+    background-image: url(./Assets/pexels-cottonbro-5532841.jpg);
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .flex-item-photos img {
+    width: auto;
   }
 
   .flex-item-photos .landscape {
