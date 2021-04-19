@@ -37,12 +37,10 @@ html {
   background-color: rgba(16, 24, 75, 1);
   font-size: 1.1rem;
   font-weight: 200;
-  border: none;
   padding: 20px 10px;
   color: #fff;
   border: 3px solid #fff;
   text-align: center;
-  visibility: hidden;
 }
 
 #topBtn:hover {
@@ -367,6 +365,7 @@ html {
   .img-wrapper {
     width: 250px;
     margin: 0 10px;
+    line-height: 2rem;
   }
 
   .img-wrapper h4 {
@@ -388,6 +387,175 @@ html {
 
   .our-beers img {
     width: 250px;
+  }
+  
+  /* --------------- Styles for visit us section --------------- */
+
+  .flex-container-visit {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: center;
+    overflow: hidden;
+  }
+
+  .flex-item-visit-text {
+    width: 80%;
+    margin: 5% 10% 0 10%;
+  }
+
+  .vflex-item-visit-text br {
+    margin-bottom: 27px;
+  }
+
+  .flex-item-visit-text p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+  }
+
+  .flex-item-visit-text p:first-child {
+    margin: 0 0 2rem 0;
+  }
+
+  .flex-item-photos {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .flex-item-photos .portrait {
+    display: none;
+  }
+
+  .flex-item-photos img {
+    width: 100%;
+  }
+
+  .flex-item-badges {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-flow: row wrap;
+    width: 35%;
+    margin-right: 5%;
+    order: 5;
+    margin-top: -30rem;
+  }
+
+  .badge-background {
+    width: 200px;
+    height: 200px;
+    background-color: #fffbfb;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .badge-wrapper {
+    height: 90%;
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  #badge_1 {
+    background-image: url(./Assets/Best-of-Craft-Beer-Awards-Logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #badge_2 {
+    background-image: url(./Assets/tripadvisor_travellers_choice_badge.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .flex-item-visit-book-cta {
+    width: 50%;
+    margin: -30rem 0 0 5%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    order: 4;
+    height: 100%;
+  }
+
+  .flex-item-visit-book-cta .visit-cta h4 {
+    font-weight: 900;
+    font-size: 3rem;
+  }
+
+  .flex-item-visit-book-cta .visit-cta p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+  }
+
+  .visit-cta a {
+    text-decoration: none;
+    background-color: rgba(48, 63, 159, 1);
+    color: #fff;
+    border-radius: 2rem;
+    margin: 5% 0 0 0;
+    position: relative;
+    padding: 1rem 0;
+    border: none;
+    display: block;
+    width: 50%;
+    text-align: center;
+  }
+
+  .flex-item-visit-map {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    order: 5;
+  }
+
+  .flex-item-visit-map img {
+    width: 70%;
+    margin-top: 2%;
+  }
+
+  .flex-item-visit-directions-cta {
+    width: 80%;
+    margin: -11rem 10% 0 10%;
+    padding: 1rem;
+    order: 6;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta h4 {
+    font-weight: 900;
+    font-size: 5rem;
+    width: 100%;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+    width: 40%;
+  }
+
+  .flex-item-visit-directions-cta > .visit-cta a {
+    margin: 0;
+    width: 30%;
   }
 
   /* --------------- Styles for footer --------------- */
@@ -467,8 +635,8 @@ html {
     text-decoration: none;
     background-color: rgba(48, 63, 159, 1);
     color: #fff;
-    padding: 0.4rem 1rem;
-    border-radius: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
     margin-top: 5%;
     display: inline-block;
   }
@@ -804,6 +972,7 @@ html {
   .img-wrapper {
     width: 250px;
     margin: 0 10px;
+    line-height: 2rem;
   }
 
   .img-wrapper h4 {
@@ -825,6 +994,175 @@ html {
 
   .our-beers img {
     width: 250px;
+  }
+
+  /* --------------- Styles for visit us section --------------- */
+
+  .flex-container-visit {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: center;
+    overflow: hidden;
+  }
+
+  .flex-item-visit-text {
+    width: 80%;
+    margin: 5% 10% 0 10%;
+  }
+
+  .vflex-item-visit-text br {
+    margin-bottom: 27px;
+  }
+
+  .flex-item-visit-text p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+  }
+
+  .flex-item-visit-text p:first-child {
+    margin: 0 0 2rem 0;
+  }
+
+  .flex-item-photos {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .flex-item-photos .portrait {
+    display: none;
+  }
+
+  .flex-item-photos img {
+    width: 100%;
+  }
+
+  .flex-item-badges {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-flow: row wrap;
+    width: 35%;
+    margin-right: 5%;
+    order: 5;
+    margin-top: -30rem;
+  }
+
+  .badge-background {
+    width: 200px;
+    height: 200px;
+    background-color: #fffbfb;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .badge-wrapper {
+    height: 90%;
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  #badge_1 {
+    background-image: url(./Assets/Best-of-Craft-Beer-Awards-Logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #badge_2 {
+    background-image: url(./Assets/tripadvisor_travellers_choice_badge.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .flex-item-visit-book-cta {
+    width: 50%;
+    margin: -30rem 0 0 5%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    order: 4;
+    height: 100%;
+  }
+
+  .flex-item-visit-book-cta .visit-cta h4 {
+    font-weight: 900;
+    font-size: 3rem;
+  }
+
+  .flex-item-visit-book-cta .visit-cta p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+  }
+
+  .visit-cta a {
+    text-decoration: none;
+    background-color: rgba(48, 63, 159, 1);
+    color: #fff;
+    border-radius: 2rem;
+    margin: 5% 0 0 0;
+    position: relative;
+    padding: 1rem 0;
+    border: none;
+    display: block;
+    width: 50%;
+    text-align: center;
+  }
+
+  .flex-item-visit-map {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    order: 5;
+  }
+
+  .flex-item-visit-map img {
+    width: 70%;
+    margin-top: 2%;
+  }
+
+  .flex-item-visit-directions-cta {
+    width: 80%;
+    margin: -11rem 10% 0 10%;
+    padding: 1rem;
+    order: 6;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta h4 {
+    font-weight: 900;
+    font-size: 5rem;
+    width: 100%;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+    width: 40%;
+  }
+
+  .flex-item-visit-directions-cta > .visit-cta a {
+    margin: 0;
+    width: 30%;
   }
 
   /* --------------- Styles for footer --------------- */
@@ -904,8 +1242,8 @@ html {
     text-decoration: none;
     background-color: rgba(48, 63, 159, 1);
     color: #fff;
-    padding: 0.4rem 1rem;
-    border-radius: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
     margin-top: 5%;
     display: inline-block;
   }
@@ -1066,7 +1404,7 @@ html {
   .main {
     background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
     height: calc(var(--vh, 1vh) * 100);
-    background-size: auto calc(var(--vh, 1vh) * 100);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1246,6 +1584,7 @@ html {
   .img-wrapper {
     width: 250px;
     margin: 0 10px;
+    line-height: 2rem;
   }
 
   .img-wrapper h4 {
@@ -1267,6 +1606,177 @@ html {
 
   .our-beers img {
     width: 250px;
+  }
+
+  /* --------------- Styles for visit us section --------------- */
+
+  .flex-container-visit {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: center;
+    overflow: hidden;
+  }
+
+  .flex-item-visit-text {
+    width: 80%;
+    margin: 10% 10% 0 10%;
+  }
+
+  .vflex-item-visit-text br {
+    margin-bottom: 27px;
+  }
+
+  .flex-item-visit-text p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+  }
+
+  .flex-item-visit-text p:first-child {
+    margin: 0 0 2rem 0;
+  }
+
+  .flex-item-photos {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .flex-item-photos .portrait {
+    display: none;
+  }
+
+  .flex-item-photos img {
+    width: 100%;
+  }
+
+  .flex-item-badges {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-flow: column wrap;
+    width: 30%;
+    order: 5;
+    margin-top: -25rem;
+  }
+
+  .badge-background:first-child {
+    margin: 0;
+  }
+
+  .badge-background {
+    width: 150px;
+    height: 150px;
+    background-color: #fffbfb;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-top: 1rem;
+  }
+
+  .badge-wrapper {
+    height: 90%;
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  #badge_1 {
+    background-image: url(./Assets/Best-of-Craft-Beer-Awards-Logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #badge_2 {
+    background-image: url(./Assets/tripadvisor_travellers_choice_badge.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .flex-item-visit-book-cta {
+    width: 50%;
+    margin: -25rem 5% 0 5%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    order: 4;
+    height: 100%;
+  }
+
+  .flex-item-visit-book-cta .visit-cta h4 {
+    font-weight: 900;
+    font-size: 3rem;
+  }
+
+  .flex-item-visit-book-cta .visit-cta p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+  }
+
+  .visit-cta a {
+    text-decoration: none;
+    background-color: rgba(48, 63, 159, 1);
+    color: #fff;
+    border-radius: 2rem;
+    margin: 5% 0 0 0;
+    position: relative;
+    padding: 1rem 0;
+    border: none;
+    display: block;
+    width: 90%;
+    text-align: center;
+  }
+
+  .flex-item-visit-map {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    order: 5;
+  }
+
+  .flex-item-visit-map img {
+    width: 70%;
+    margin-top: 10%;
+  }
+
+  .flex-item-visit-directions-cta {
+    width: 80%;
+    margin: -11rem 10% 0 10%;
+    padding: 1rem;
+    order: 6;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta h4 {
+    font-weight: 900;
+    font-size: 4rem;
+    width: 100%;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+    width: 40%;
+  }
+
+  .flex-item-visit-directions-cta > .visit-cta a {
+    margin: 5% 0 0 0;
+    width: 50%;
   }
 
   /* --------------- Styles for footer --------------- */
@@ -1346,8 +1856,8 @@ html {
     text-decoration: none;
     background-color: rgba(48, 63, 159, 1);
     color: #fff;
-    padding: 0.4rem 1rem;
-    border-radius: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
     margin-top: 5%;
     display: inline-block;
   }
@@ -1705,6 +2215,7 @@ html {
   .img-wrapper {
     width: 250px;
     margin: 0 10px;
+    line-height: 2rem;
   }
 
   .img-wrapper h4 {
@@ -1726,6 +2237,176 @@ html {
 
   .our-beers img {
     width: 250px;
+  }
+
+  /* --------------- Styles for visit us section --------------- */
+
+  .flex-container-visit {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .flex-item-visit-text {
+    width: 80%;
+    margin: 10% 10% 0 10%;
+  }
+
+  .vflex-item-visit-text br {
+    margin-bottom: 27px;
+  }
+
+  .flex-item-visit-text p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+  }
+
+  .flex-item-visit-text p:first-child {
+    margin: 0 0 2rem 0;
+  }
+
+  .flex-item-photos {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .flex-item-photos .portrait {
+    display: none;
+  }
+
+  .flex-item-photos img {
+    width: 100%;
+  }
+
+  .flex-item-badges {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-flow: column wrap;
+    width: 30%;
+    order: 5;
+    margin-top: -20rem;
+  }
+
+  .badge-background:first-child {
+    margin: 0;
+  }
+
+  .badge-background {
+    width: 150px;
+    height: 150px;
+    background-color: #fffbfb;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-top: 1rem;
+  }
+
+  .badge-wrapper {
+    height: 90%;
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  #badge_1 {
+    background-image: url(./Assets/Best-of-Craft-Beer-Awards-Logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #badge_2 {
+    background-image: url(./Assets/tripadvisor_travellers_choice_badge.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .flex-item-visit-book-cta {
+    width: 50%;
+    margin: -20rem 5% 0 5%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    order: 4;
+    height: 100%;
+  }
+
+  .flex-item-visit-book-cta .visit-cta h4 {
+    font-weight: 900;
+    font-size: 3rem;
+  }
+
+  .flex-item-visit-book-cta .visit-cta p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+  }
+
+  .visit-cta a {
+    text-decoration: none;
+    background-color: rgba(48, 63, 159, 1);
+    color: #fff;
+    border-radius: 2rem;
+    margin: 5% 0 0 0;
+    position: relative;
+    padding: 1rem 0;
+    border: none;
+    display: block;
+    width: 90%;
+    text-align: center;
+  }
+
+  .flex-item-visit-map {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    order: 5;
+  }
+
+  .flex-item-visit-map img {
+    width: 70%;
+    margin-top: 10%;
+  }
+
+  .flex-item-visit-directions-cta {
+    width: 80%;
+    margin: -11rem 10% 0 10%;
+    padding: 1rem;
+    order: 6;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta h4 {
+    font-weight: 900;
+    font-size: 4rem;
+    width: 100%;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+    width: 40%;
+  }
+
+  .flex-item-visit-directions-cta > .visit-cta a {
+    margin: 5% 0 0 0;
+    width: 50%;
   }
 
   /* --------------- Styles for footer --------------- */
@@ -1805,8 +2486,8 @@ html {
     text-decoration: none;
     background-color: rgba(48, 63, 159, 1);
     color: #fff;
-    padding: 0.4rem 1rem;
-    border-radius: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
     margin-top: 5%;
     display: inline-block;
   }
@@ -1975,9 +2656,10 @@ html {
   .main {
     background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
     height: calc(var(--vh, 1vh) * 100);
-    background-size: auto calc(var(--vh, 1vh) * 100);
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 98;
   }
 
   /* --------------- Styles for about us section --------------- */
@@ -2013,8 +2695,9 @@ html {
 
   .about-text p {
     font-weight: 200;
-    line-height: 34px;
+    line-height: 2rem;
     margin: 27px 0;
+    font-kerning: 0.5rem;
   }
 
   .about-text p:first-child {
@@ -2155,6 +2838,7 @@ html {
   .img-wrapper {
     width: 250px;
     margin: 0 10px;
+    line-height: 2rem;
   }
 
   .img-wrapper h4 {
@@ -2176,6 +2860,156 @@ html {
 
   .our-beers img {
     width: 250px;
+  }
+
+  /* --------------- Styles for visit us section --------------- */
+
+  .flex-container-visit {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(var(--vh, 1vh) * 100);
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .flex-item-visit-text {
+    width: 80%;
+    margin: 10% 10% 0 10%;
+  }
+
+  .vflex-item-visit-text br {
+    margin-bottom: 27px;
+  }
+
+  .flex-item-visit-text p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+  }
+
+  .flex-item-visit-text p:first-child {
+    margin: 0 0 2rem 0;
+  }
+
+  .flex-item-photos {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .flex-item-photos img {
+    width: 100%;
+  }
+
+  .flex-item-photos .landscape {
+    display: none;
+  }
+
+  .flex-item-badges {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: -5rem 10% 0 10%;
+  }
+
+  .badge-background {
+    width: 150px;
+    height: 150px;
+    background-color: #fffbfb;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-top: 1rem;
+  }
+
+  .badge-wrapper {
+    height: 90%;
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  #badge_1 {
+    background-image: url(./Assets/Best-of-Craft-Beer-Awards-Logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #badge_2 {
+    background-image: url(./Assets/tripadvisor_travellers_choice_badge.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .flex-item-visit-book-cta {
+    width: 80%;
+    margin: 10% 10% 0 10%;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .flex-item-visit-book-cta .visit-cta h4 {
+    font-weight: 900;
+    font-size: 3rem;
+  }
+
+  .flex-item-visit-book-cta .visit-cta p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
+  }
+
+  .visit-cta a {
+    text-decoration: none;
+    background-color: rgba(48, 63, 159, 1);
+    color: #fff;
+    border-radius: 2rem;
+    margin: 5% 0 15% 0;
+    position: relative;
+    padding: 1rem 0;
+    border: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .flex-item-visit-map {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    display: none;
+  }
+
+  .flex-item-visit-map img {
+    width: 900px;
+  }
+
+  .flex-item-visit-directions-cta {
+    width: 80%;
+    margin: 10% 10% 0 10%;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta h4 {
+    font-weight: 900;
+    font-size: 3rem;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta p {
+    font-weight: 200;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-kerning: 0.5rem;
   }
 
   /* --------------- Styles for footer --------------- */
@@ -2255,8 +3089,8 @@ html {
     text-decoration: none;
     background-color: rgba(48, 63, 159, 1);
     color: #fff;
-    padding: 0.4rem 1rem;
-    border-radius: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
     margin-top: 5%;
     display: inline-block;
   }
