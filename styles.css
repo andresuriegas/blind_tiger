@@ -196,25 +196,26 @@ html {
     display: flex;
     flex-flow: row wrap;
     min-height: calc(var(--vh, 1vh) * 100);
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: flex-start;
   }
 
   .about-header {
-    width: 80%;
-    margin: 115px 10% 0 10%;
+    width: 55%;
+    margin: 110px 22.5% 0 22.5%;
     height: auto;
   }
 
   .about-header h1 {
     font-weight: 900;
     font-size: 4.2rem;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
   }
 
   .about-text {
-    width: 35%;
-    margin: 5% 5% 0 10%;
+    width: 25%;
+    margin-top: 3%;
+    margin-left: 22.5%;
   }
 
   .about-text br {
@@ -232,9 +233,11 @@ html {
   }
 
   .history-block {
-    width: 40%;
+    width: 30%;
+    height: min-content;
     background-color: rgba(16, 24, 75, 1);
-    margin: 5% 10% 0 0;
+    margin-top: 3%;
+    margin-right: 22.5%;
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
@@ -293,21 +296,21 @@ html {
 
   .our-beers-header {
     width: 55%;
-    margin: 160px 10% 0 10%;
+    margin: 110px 10% 0 10%;
     height: auto;
   }
 
   .our-beers-header h1 {
     font-weight: 900;
     font-size: 4.2rem;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     line-height: 4.5rem;
   }
 
   .our-beers-header h3 {
     font-weight: 200;
     font-size: 1.5rem;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
   }
 
   .circle-sketch-highlight {
@@ -352,7 +355,7 @@ html {
   }
 
   .flex-child {
-    width: 80%;
+    width: 55%;
     margin: 0 10%;
     height: auto;
     display: flex;
@@ -405,8 +408,27 @@ html {
     margin: 1% 10% 0 10%;
   }
 
-  .vflex-item-visit-text br {
-    margin-bottom: 27px;
+  .visit-us-header {
+    width: 55%;
+    margin: 110px 10% 0 10%;
+    height: auto;
+  }
+
+  .visit-us-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 2%;
+    line-height: 4.5rem;
+  }
+
+  .visit-us-header h3 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+  }
+
+  .flex-item-visit-text br {
+    margin-bottom: 1rem;
   }
 
   .flex-item-visit-text p {
@@ -493,6 +515,7 @@ html {
 
   .flex-item-visit-book-cta {
     width: 35%;
+    max-height: 500px;
     margin: -30rem 0 0 22.5%;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 1rem;
@@ -534,8 +557,8 @@ html {
     align-content: center;
     overflow: hidden;
     order: 5;
-    width: 35%;
-    margin-left: 22.5%;
+    width: 55%;
+
   }
 
   .map-img {
@@ -548,16 +571,13 @@ html {
   }
 
   .flex-item-visit-directions-cta {
-    width: 35%;
-    margin: 10rem 22.5% 0 -15%;
-    margin-right: 22.5%;
+    width: 55%;
+    margin-top: -10rem;
     padding: 1rem;
     order: 6;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+
     padding: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 
   .flex-item-visit-directions-cta .visit-cta {
@@ -1039,6 +1059,24 @@ html {
     margin: 5% 10% 0 10%;
   }
 
+  .visit-us-header {
+    width: 80%;
+    margin: 115px 10% 0 10%;
+    height: auto;
+  }
+
+  .visit-us-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 2%;
+  }
+
+  .visit-us-header h3 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+
   .vflex-item-visit-text br {
     margin-bottom: 27px;
   }
@@ -1047,7 +1085,6 @@ html {
     font-weight: 200;
     line-height: 2rem;
     margin: 1rem 0;
-    font-kerning: 0.5rem;
   }
 
   .flex-item-visit-text p:first-child {
@@ -1668,6 +1705,24 @@ html {
   .flex-item-visit-text {
     width: 80%;
     margin: 10% 10% 0 10%;
+  }
+
+  .visit-us-header {
+    width: 80%;
+    margin: 115px 10% 0 10%;
+    height: auto;
+  }
+
+  .visit-us-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 2%;
+  }
+
+  .visit-us-header h3 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
   }
 
   .vflex-item-visit-text br {
@@ -2319,6 +2374,24 @@ html {
     margin: 10% 10% 0 10%;
   }
 
+  .visit-us-header {
+    width: 80%;
+    margin: 115px 10% 0 10%;
+    height: auto;
+  }
+
+  .visit-us-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 2%;
+  }
+
+  .visit-us-header h3 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+
   .vflex-item-visit-text br {
     margin-bottom: 27px;
   }
@@ -2959,6 +3032,24 @@ html {
   .flex-item-visit-text {
     width: 80%;
     margin: 10% 10% 0 10%;
+  }
+
+  .visit-us-header {
+    width: 80%;
+    margin: 115px 10% 0 10%;
+    height: auto;
+  }
+
+  .visit-us-header h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    margin-bottom: 2%;
+  }
+
+  .visit-us-header h3 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
   }
 
   .vflex-item-visit-text br {
