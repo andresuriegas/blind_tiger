@@ -1,0 +1,254 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./store_styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/png" />
+    <script src="./store.js" async></script>
+    <title>The Blind Tiger Brewing Co. | Store</title>
+  </head>
+  <body>
+    <!-- Back to Top Button -->
+
+    <button onclick="topFunction()" id="topBtn" title="Back to top">^</button>
+
+    <!-- Navigation -->
+
+    <nav id="navigation">
+      <a href="index.html" class="logo">
+        <img src="./Assets/logo-white.png" alt="logo" />
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./index.html#about">About</a>
+        </li>
+        <li>
+          <a href="./index.html#our-beers">Our Beers</a>
+        </li>
+        <li>
+          <a href="#top">Shop</a>
+        </li>
+        <li class="cart">
+          <p class="cart-value">0</p>
+          <a href="./store.html#cart">
+            <img
+              src="./Assets/shopping-cart-of-checkered-design.png"
+              alt="shopping cart"
+            />
+          </a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <!-- Store -->
+
+    <a href="" id="store"></a>
+    <section class="store">
+      <div class="store-header">
+        <h1>
+          Discover something <br />
+          <span class="circle-sketch-highlight">different</span>.
+        </h1>
+        <h3>From stouts, to session IPAs, to lagers.</h3>
+        <hr />
+      </div>
+      <div class="shop-items">
+        <div class="shop-item">
+            <img class="shop-item-image"
+                src="./Assets/500ML_IPA.png"
+                alt="Blind Tiger IPA 500ml beer can"
+            />
+            <span class="shop-item-title">IPA</span>
+            <p>ABV 5.2%</p>
+            <hr />
+            <p class="product-description">This IPA features fruity and piney Cascade and Citra hops, matched evenly with a complex malt body for maximum drinkability.</p>
+            <hr />
+            <div class="shop-item-details">          
+                <p class="shop-item-price">$3.99</p>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image"
+            src="./Assets/500ML_Brown_Ale.png"
+            alt="Blind Tiger Brown Ale 500ml beer can"
+          />
+            <span class="shop-item-title">Brown Ale</span>
+            <p class="product-details">ABV 5.9%</p>
+            <hr />
+            <p class="product-description">A traditional English Brown Ale rich with malty and light nutty aromas.</p>
+            <hr />
+            <div class="shop-item-details">   
+                <p class="shop-item-price">$3.99</p>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image"
+            src="./Assets/500ML_Lager.png"
+            alt="Blind Tiger Lager 500ml beer can"
+          />
+            <span class="shop-item-title">Lager</span>
+            <p>ABV 5.2%</p>
+            <hr />
+            <p class="product-description">Light and refreshing with an amber colour. It is made with Czech and Polish hops which provide full flavours and aroma.</p>
+            <hr />
+            <div class="shop-item-details">
+                <p class="shop-item-price">$2.99</p>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image"
+            src="./Assets/500ML_Oat_Stout.png"
+            alt="Blind Tiger Oat Stout 500ml beer can"
+          />
+            <span class="shop-item-title">Oat Stout</span>
+            <p>ABV 7.8%</p>
+            <hr />
+            <p class="product-description">Dark and roasty reminiscent of espresso coffee with hints of chocolate, dried cherries and rich toffee.</p>
+            <hr />
+            <div class="shop-item-details">
+                <p class="shop-item-price">$4.99</p>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image"
+            src="./Assets/500ML_Pale_Ale.png"
+            alt="Blind Tiger Pale Ale 500ml beer can"
+          />
+            <span class="shop-item-title">Pale Ale</span>
+            <p>ABV 5.9%</p>
+            <hr />
+            <p class="product-description">Clean, crisp pale ale with a hint of bitterness. Aimed to be an ideal restaurant/pub beer with flavours that won't get lost while eating.</p>
+            <hr />
+            <div class="shop-item-details">
+                <p class="shop-item-price">$3.99</p>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image"
+            src="./Assets/500ML_Session_IPA.png"
+            alt="Blind Tiger Session IPA 500ml beer can"
+          />
+            <span class="shop-item-title">Session IPA</span>
+            <p>ABV 4.8%</p>
+            <hr />
+            <p class="product-description">This highly approachable session ale delivers intense hop-derived fruity flavours and aromas that can be enjoyed with less alcohol.</p>
+            <hr />
+            <div class="shop-item-details">
+                <p class="shop-item-price">$2.99</p>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+        </div>
+    </div>
+      </div>
+    </section>
+
+    <!-- Shopping cart -->
+
+    <a href="" id="cart"></a>
+    <section class="shopping-cart">
+        <h2 class="section-header">Woohoo! This is what you're getting.</h2>
+        <div class="cart-row">
+            <span class="cart-header">Item</span>
+            <span class="cart-header">Price</span>
+            <span class="cart-header">Qty</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">Purchase</button>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="flex-footer">
+        <div class="logo-header">
+            <a href="index.html" class="logo">
+            <img src="./Assets/logo-white.png" alt="logo" />
+            </a>
+        </div>
+        <div class="footer-main">
+            <div class="site-menu">
+            <h5>Menu</h5>
+            <hr />
+            <ul>
+                <li>
+                <a href="#">Home</a>
+                </li>
+                <li>
+                <a href="#about">About</a>
+                </li>
+                <li>
+                <a href="#our-beers">Our Beers</a>
+                </li>
+            </ul>
+            </div>
+            <div class="newsletter-wrapper">
+            <h5>Sign up to our newsletter</h5>
+            <hr />
+            <input type="email" placeholder="email" name="email"></input>
+            <a href="" id="signUpBtn">Sign up</a>
+            </div>
+            <div class="social-media-menu">
+            <h5>Say hi!</h5>
+            <hr />
+            <ul>
+                <li>
+                <a href="https://twitter.com/" target="_blank"
+                    ><img src="./Assets/005-twitter.png" alt="Twitter logo"
+                /></a>
+                </li>
+                <li>
+                <a href="https://instagram.com/" target="_blank"
+                    ><img src="./Assets/002-instagram.png" alt="Instagram logo"
+                /></a>
+                </li>
+                <li>
+                <a href="https://facebook.com/" target="_blank"
+                    ><img
+                    src="./Assets/004-facebook-app-logo.png"
+                    alt="Facebook logo"
+                /></a>
+                </li>
+                <li>
+                <a href="https://www.messenger.com/" target="_blank"
+                    ><img src="./Assets/007-messenger.png" alt="Messenger logo"
+                /></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; 2021 The Blind Tiger Brewing Co.</p>
+            <p>Crafted with ❤️ from Brooklyn.</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
