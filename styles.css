@@ -195,8 +195,7 @@ html {
   .about {
     display: flex;
     flex-flow: row wrap;
-    min-height: calc(var(--vh, 1vh) * 100);
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: flex-start;
   }
 
@@ -213,7 +212,7 @@ html {
   }
 
   .about-text {
-    width: 25%;
+    width: 20%;
     margin-top: 3%;
     margin-left: 22.5%;
   }
@@ -289,7 +288,6 @@ html {
   .our-beers {
     display: flex;
     flex-flow: row wrap;
-    min-height: calc(var(--vh, 1vh) * 100);
     justify-content: space-around;
     align-content: flex-start;
   }
@@ -360,7 +358,6 @@ html {
     height: auto;
     display: flex;
     flex-flow: row wrap;
-    min-height: calc(var(--vh, 1vh) * 100);
     justify-content: space-around;
     align-content: flex-start;
   }
@@ -534,7 +531,6 @@ html {
     font-weight: 200;
     line-height: 2rem;
     margin: 1rem 0;
-    font-kerning: 0.5rem;
   }
 
   .visit-cta a {
@@ -576,7 +572,6 @@ html {
     padding: 1rem;
     order: 6;
     height: 100%;
-
     padding: 1rem;
   }
 
@@ -584,6 +579,8 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    width: 50%;
+    margin: 0 25%;
   }
 
   .flex-item-visit-directions-cta .visit-cta h4 {
@@ -596,8 +593,11 @@ html {
     font-weight: 200;
     line-height: 2rem;
     margin: 1rem 0;
-    font-kerning: 0.5rem;
     width: 40%;
+  }
+
+  .flex-item-visit-directions-cta .visit-cta p:last-of-type {
+    margin-left: 10%;
   }
 
   .flex-item-visit-directions-cta > .visit-cta a {

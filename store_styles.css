@@ -185,7 +185,6 @@ html {
  .store {
     display: flex;
     flex-flow: row wrap;
-    min-height: calc(var(--vh, 1vh) * 100);
     justify-content: space-around;
     align-content: flex-start;
   }
@@ -256,7 +255,6 @@ html {
     height: auto;
     display: flex;
     flex-flow: row wrap;
-    min-height: calc(var(--vh, 1vh) * 100);
     justify-content: space-between;
     align-content: flex-start;
   }
@@ -715,7 +713,6 @@ html {
  .store {
     display: flex;
     flex-flow: row wrap;
-    min-height: calc(var(--vh, 1vh) * 100);
     justify-content: space-around;
     align-content: flex-start;
   }
@@ -786,7 +783,6 @@ html {
     height: auto;
     display: flex;
     flex-flow: row wrap;
-    min-height: calc(var(--vh, 1vh) * 100);
     justify-content: space-between;
     align-content: flex-start;
   }
