@@ -183,7 +183,7 @@ html {
   /* --------------- Styles for hero section --------------- */
 
   .main {
-    background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
+    background-image: url("./Assets/03_Photos/pexels-maximiliano-carrizo-1921420-large.jpg");
     height: calc(var(--vh, 1vh) * 100);
     background-size: cover;
     background-repeat: no-repeat;
@@ -402,7 +402,7 @@ html {
 
   .flex-item-visit-text {
     width: 55%;
-    margin: 1% 10% 0 10%;
+    margin: 3% 10% 0 10%;
   }
 
   .visit-us-header {
@@ -439,35 +439,6 @@ html {
     margin: 0 0 2rem 0;
   }
 
-  .flex-item-photos {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    width: 100%;
-  }
-
-  .flex-item-photos .portrait {
-    display: none;
-  }
-
-  .flex-item-photos #photo4 {
-    background-image: url(./Assets/pexels-cottonbro-5532660.jpg);
-    height: calc(var(--vh, 1vh) * 100);
-    width: 50%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .flex-item-photos #photo5 {
-    background-image: url(./Assets/pexels-cottonbro-5532830.jpg);
-    height: calc(var(--vh, 1vh) * 100);
-    width: 50%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
   .flex-item-badges {
     display: flex;
     justify-content: center;
@@ -476,7 +447,6 @@ html {
     width: 20%;
     margin-right: 22.5%;
     order: 5;
-    margin-top: -30rem;
   }
 
   .badge-background {
@@ -497,14 +467,14 @@ html {
   }
 
   #badge_1 {
-    background-image: url(./Assets/Best-of-Craft-Beer-Awards-Logo.png);
+    background-image: url(./Assets/02_Icons_Badges_and_Logos/007-best-of-craft-beer-awards-logo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #badge_2 {
-    background-image: url(./Assets/tripadvisor_travellers_choice_badge.png);
+    background-image: url(./Assets/02_Icons_Badges_and_Logos/008-tripadvisor-travellers-choice-badge.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -513,7 +483,7 @@ html {
   .flex-item-visit-book-cta {
     width: 35%;
     max-height: 500px;
-    margin: -30rem 0 0 22.5%;
+    margin: 0 0 0 22.5%;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -554,11 +524,10 @@ html {
     overflow: hidden;
     order: 5;
     width: 55%;
-
   }
 
   .map-img {
-    background-image: url(./Assets/map.png);
+    background-image: url(./Assets/03_Photos/map.png);
     background-size: cover;
     background-position: center;
     height: 700px;
@@ -579,8 +548,8 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width: 50%;
-    margin: 0 25%;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .flex-item-visit-directions-cta .visit-cta h4 {
@@ -837,7 +806,7 @@ html {
   /* --------------- Styles for hero section --------------- */
 
   .main {
-    background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
+    background-image: url("./Assets/03_Photos/pexels-maximiliano-carrizo-1921420-medium.jpg");
     height: calc(var(--vh, 1vh) * 100);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1091,35 +1060,6 @@ html {
     margin: 0 0 2rem 0;
   }
 
-  .flex-item-photos {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    width: 100%;
-  }
-
-  .flex-item-photos .portrait {
-    display: none;
-  }
-
-  .flex-item-photos #photo4 {
-    background-image: url(./Assets/pexels-cottonbro-5532660.jpg);
-    height: calc(var(--vh, 1vh) * 100);
-    width: 100%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .flex-item-photos #photo5 {
-    background-image: url(./Assets/pexels-cottonbro-5532830.jpg);
-    height: calc(var(--vh, 1vh) * 100);
-    width: 100%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
   .flex-item-badges {
     display: flex;
     justify-content: center;
@@ -1128,7 +1068,6 @@ html {
     width: 35%;
     margin-right: 5%;
     order: 5;
-    margin-top: -30rem;
   }
 
   .badge-background {
@@ -1149,14 +1088,14 @@ html {
   }
 
   #badge_1 {
-    background-image: url(./Assets/Best-of-Craft-Beer-Awards-Logo.png);
+    background-image: url(./Assets/02_Icons_Badges_and_Logos/007-best-of-craft-beer-awards-logo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #badge_2 {
-    background-image: url(./Assets/tripadvisor_travellers_choice_badge.png);
+    background-image: url(./Assets/02_Icons_Badges_and_Logos/008-tripadvisor-travellers-choice-badge.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1164,7 +1103,7 @@ html {
 
   .flex-item-visit-book-cta {
     width: 50%;
-    margin: -30rem 0 0 5%;
+    margin: 0 5%;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -1208,7 +1147,7 @@ html {
   }
 
   .map-img {
-    background-image: url(./Assets/map.png);
+    background-image: url(./Assets/03_Photos/map.png);
     background-size: cover;
     background-position: center;
     height: 700px;
@@ -1485,7 +1424,7 @@ html {
   /* --------------- Styles for hero section --------------- */
 
   .main {
-    background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
+    background-image: url("./Assets/03_Photos/pexels-maximiliano-carrizo-1921420-medium.jpg");
     height: calc(var(--vh, 1vh) * 100);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1704,7 +1643,7 @@ html {
 
   .flex-item-visit-text {
     width: 80%;
-    margin: 10% 10% 0 10%;
+    margin: 5% 10% 0 10%;
   }
 
   .visit-us-header {
@@ -1740,35 +1679,6 @@ html {
     margin: 0 0 2rem 0;
   }
 
-  .flex-item-photos {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    width: 100%;
-  }
-
-  .flex-item-photos .portrait {
-    display: none;
-  }
-
-  .flex-item-photos #photo4 {
-    background-image: url(./Assets/pexels-cottonbro-5532660.jpg);
-    height: 100vh;
-    width: 100%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .flex-item-photos #photo5 {
-    background-image: url(./Assets/pexels-cottonbro-5532830.jpg);
-    height: 100vh;
-    width: 100%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
   .flex-item-badges {
     display: flex;
     justify-content: flex-start;
@@ -1776,7 +1686,6 @@ html {
     flex-flow: column wrap;
     width: 30%;
     order: 5;
-    margin-top: -25rem;
   }
 
   .badge-background:first-child {
@@ -1800,14 +1709,14 @@ html {
   }
 
   #badge_1 {
-    background-image: url(./Assets/Best-of-Craft-Beer-Awards-Logo.png);
+    background-image: url(./Assets/02_Icons_Badges_and_Logos/007-best-of-craft-beer-awards-logo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #badge_2 {
-    background-image: url(./Assets/tripadvisor_travellers_choice_badge.png);
+    background-image: url(./Assets/02_Icons_Badges_and_Logos/008-tripadvisor-travellers-choice-badge.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1816,7 +1725,7 @@ html {
   .flex-item-visit-book-cta {
     width: 50%;
     max-height: 450px;
-    margin: -25rem 5% 0 5%;
+    margin: 0 5%;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -1860,7 +1769,7 @@ html {
   }
 
   .map-img {
-    background-image: url(./Assets/map.png);
+    background-image: url(./Assets/03_Photos/map.png);
     background-size: cover;
     background-position: center;
     height: 700px;
@@ -2154,7 +2063,7 @@ html {
   /* --------------- Styles for hero section --------------- */
 
   .main {
-    background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
+    background-image: url("./Assets/03_Photos/pexels-maximiliano-carrizo-1921420-medium.jpg");
     height: calc(var(--vh, 1vh) * 100);
     background-size: auto calc(var(--vh, 1vh) * 100);
     background-repeat: no-repeat;
@@ -2408,35 +2317,6 @@ html {
     margin: 0 0 2rem 0;
   }
 
-  .flex-item-photos {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    width: 100%;
-  }
-
-  .flex-item-photos .portrait {
-    display: none;
-  }
-
-  .flex-item-photos #photo4 {
-    background-image: url(./Assets/pexels-cottonbro-5532660.jpg);
-    height: calc(var(--vh, 1vh) * 100);
-    width: 100%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .flex-item-photos #photo5 {
-    background-image: url(./Assets/pexels-cottonbro-5532830.jpg);
-    height: calc(var(--vh, 1vh) * 100);
-    width: 100%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
   .flex-item-badges {
     display: flex;
     justify-content: space-evenly;
@@ -2444,7 +2324,6 @@ html {
     flex-flow: column wrap;
     width: 30%;
     order: 5;
-    margin-top: -20rem;
   }
 
   .badge-background:first-child {
@@ -2468,14 +2347,14 @@ html {
   }
 
   #badge_1 {
-    background-image: url(./Assets/Best-of-Craft-Beer-Awards-Logo.png);
+    background-image: url(./Assets/02_Icons_Badges_and_Logos/007-best-of-craft-beer-awards-logo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #badge_2 {
-    background-image: url(./Assets/tripadvisor_travellers_choice_badge.png);
+    background-image: url(./Assets/02_Icons_Badges_and_Logos/008-tripadvisor-travellers-choice-badge.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -2483,7 +2362,7 @@ html {
 
   .flex-item-visit-book-cta {
     width: 50%;
-    margin: -20rem 5% 0 5%;
+    margin: 0 5%;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -2527,7 +2406,7 @@ html {
   }
 
   .map-img {
-    background-image: url(./Assets/map.png);
+    background-image: url(./Assets/03_Photos/map.png);
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -2812,7 +2691,7 @@ html {
   /* --------------- Styles for hero section --------------- */
 
   .main {
-    background-image: url("./Assets/pexels-maximiliano-carrizo-1921420.jpg");
+    background-image: url("./Assets/03_Photos/pexels-maximiliano-carrizo-1921420-small.jpg");
     height: calc(var(--vh, 1vh) * 100);
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -3068,54 +2947,12 @@ html {
     margin: 0 0 2rem 0;
   }
 
-  .flex-item-photos {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    width: 100%;
-  }
-
-  .flex-item-photos #photo1 {
-    background-image: url(./Assets/pexels-cottonbro-5538160.jpg);
-    height: calc(var(--vh, 1vh) * 100);
-    width: 100%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .flex-item-photos #photo2 {
-    background-image: url(./Assets/pexels-cottonbro-5537784.jpg);
-    height: calc(var(--vh, 1vh) * 100);
-    width: 100%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .flex-item-photos #photo3 {
-    background-image: url(./Assets/pexels-cottonbro-5532841.jpg);
-    height: calc(var(--vh, 1vh) * 100);
-    width: 100%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .flex-item-photos img {
-    width: auto;
-  }
-
-  .flex-item-photos .landscape {
-    display: none;
-  }
-
   .flex-item-badges {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
     width: 100%;
-    margin: -5rem 10% 0 10%;
+    margin: 0 10% 0 10%;
   }
 
   .badge-background {
@@ -3135,14 +2972,14 @@ html {
   }
 
   #badge_1 {
-    background-image: url(./Assets/Best-of-Craft-Beer-Awards-Logo.png);
+    background-image: url(./Assets/02_Icons_Badges_and_Logos/007-best-of-craft-beer-awards-logo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #badge_2 {
-    background-image: url(./Assets/tripadvisor_travellers_choice_badge.png);
+    background-image: url(./Assets/02_Icons_Badges_and_Logos/008-tripadvisor-travellers-choice-badge.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

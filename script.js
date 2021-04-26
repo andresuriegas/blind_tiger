@@ -72,7 +72,7 @@ const scrollFunction = () => {
     document.body.scrollTop > window.innerHeight / 1.8 ||
     document.documentElement.scrollTop > window.innerHeight / 1.8
   ) {
-    topButton.style.visibility = "visible"
+    topButton.style.visibility = "visible";
     topButton.style.display = "block";
   } else {
     topButton.style.display = "none";
@@ -84,4 +84,4 @@ const topFunction = () => {
   document.documentElement.scrollY = 0;
 };
 
-const button = document.getElementById('topBtn').style.visibility = "hidden"
+const button = (document.getElementById("topBtn").style.visibility = "hidden");
