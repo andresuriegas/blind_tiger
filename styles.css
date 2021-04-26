@@ -2691,7 +2691,7 @@ html {
   /* --------------- Styles for hero section --------------- */
 
   .main {
-    background-image: url("./Assets/03_Photos/pexels-maximiliano-carrizo-1921420-small.jpg");
+    background-image: url("./Assets/03_Photos/pexels-maximiliano-carrizo-1921420-medium.jpg");
     height: calc(var(--vh, 1vh) * 100);
     background-size: auto 100%;
     background-repeat: no-repeat;
