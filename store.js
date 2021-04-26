@@ -1,35 +1,3 @@
-// Check if document is still loading
-const ready = () => {
-  // Remove item from cart
-  const removeCartItemButtons = document.getElementsByClassName("btn-danger");
-  for (let i = 0; i < removeCartItemButtons.length; i++) {
-    let button = removeCartItemButtons[i];
-    button.addEventListener("click", removeCartItem);
-  }
-
-  let quantityInputs = document.getElementsByClassName("cart-quantity-input");
-  for (let i = 0; i < quantityInputs.length; i++) {
-    let input = quantityInputs[i];
-    input.addEventListener("change", quantityChanged);
-  }
-
-  let addToCartButtons = document.getElementsByClassName("shop-item-button");
-  for (let i = 0; i < addToCartButtons.length; i++) {
-    let button = addToCartButtons[i];
-    button.addEventListener("click", addToCartClicked);
-  }
-
-  document
-    .getElementsByClassName("btn-purchase")[0]
-    .addEventListener("click", purchaseClicked);
-};
-
-// Check ito make sure the document is loaded
-if (document.readyState == "loading") {
-  document.addEventListener("DOMContentLoaded", ready);
-} else {
-  ready();
-}
 
 // Event listener handlers //
 
@@ -129,3 +97,36 @@ const updateCartTotal = () => {
   document.getElementsByClassName("cart-total-price")[0].innerText =
     "$" + total;
 };
+
+// Check if document is still loading
+const ready = () => {
+  // Remove item from cart
+  const removeCartItemButtons = document.getElementsByClassName("btn-danger");
+  for (let i = 0; i < removeCartItemButtons.length; i++) {
+    let button = removeCartItemButtons[i];
+    button.addEventListener("click", removeCartItem);
+  }
+
+  let quantityInputs = document.getElementsByClassName("cart-quantity-input");
+  for (let i = 0; i < quantityInputs.length; i++) {
+    let input = quantityInputs[i];
+    input.addEventListener("change", quantityChanged);
+  }
+
+  let addToCartButtons = document.getElementsByClassName("shop-item-button");
+  for (let i = 0; i < addToCartButtons.length; i++) {
+    let button = addToCartButtons[i];
+    button.addEventListener("click", addToCartClicked);
+  }
+
+  document
+    .getElementsByClassName("btn-purchase")[0]
+    .addEventListener("click", purchaseClicked);
+};
+
+// Check to make sure the document is loaded
+if (document.readyState == "loading") {
+  document.addEventListener("DOMContentLoaded", ready);
+} else {
+  ready();
+}
