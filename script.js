@@ -8,6 +8,10 @@ const navSlide = () => {
     //Toggle Nav
     nav.classList.toggle("nav-active");
 
+    if (nav.classList.contains("nav-active")) {
+      topButton.style.display = "none";
+    }
+
     //Animate Links
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
